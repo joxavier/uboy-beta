@@ -6,7 +6,7 @@ const Metaverse = () => {
 
   return (
     <MetaverseContainer id='metaverse'>
-      <MetaverseH1>Our Metaverse</MetaverseH1>
+      <MetaverseH1>Uboy Metaverse</MetaverseH1>
       <MetaverseWrapper>
         <Platform {...metaverseObjDiscord}/>
         <Platform {...metaverseObjReddit}/>

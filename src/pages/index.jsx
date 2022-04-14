@@ -23,7 +23,6 @@ const Home = () => {
       <Info {...homeObjCollaborators}/>
       <Info {...homeObjMinters}/>
       <Metaverse />
-      <Footer />
     </>
   )
 }
