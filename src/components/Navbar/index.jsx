@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { FaBars } from 'react-icons/fa'
 import {IconContext} from 'react-icons/lib'
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavLinks, NavItem, NavBtn, NavBtnLink } from './NavbarElements'
+import { Nav, NavbarContainer, NavLogoWrap, LogoImg, MobileIcon, NavMenu, NavLinks, NavItem, NavBtn, NavBtnLink } from './NavbarElements'
 import { animateScroll as scroll } from 'react-scroll';
 
 const Navbar = ({ toggle }) => {
@@ -27,7 +27,9 @@ const Navbar = ({ toggle }) => {
     <IconContext.Provider value={{ color: '#fff'}}>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to='/' onClick={toggleHome}>UBOY</NavLogo>
+            <NavLogoWrap>
+              <LogoImg to='/' onClick={toggleHome} src={"./images/uboy_logo.png"} alt={"UBOY Logo"} />
+            </NavLogoWrap>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>

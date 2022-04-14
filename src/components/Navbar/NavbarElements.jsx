@@ -39,6 +39,20 @@ export const NavLogo = styled(LinkR) `
   font-weight: bold;
   text-decoration: none;
 `
+export const NavLogoWrap = styled.div`
+  justify-self: flex-start;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  max-width: 10%;
+  height: 100%;
+`
+export const LogoImg = styled.img`
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding-right: 0;
+`
 export const MobileIcon = styled.div`
   display: none;
   
