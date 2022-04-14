@@ -1,29 +1,37 @@
 import React, {useState} from 'react'
-import Video from '../../videos/video.mp4'
+import Video1 from '../../videos/video1.mp4'
+import Video2 from '../../videos/video2.mp4'
+import Video3 from '../../videos/video3.mp4'
+import Video4 from '../../videos/video4.mp4'
+import Video5 from '../../videos/video5.mp4'
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements'
-import { Button } from '../ButtonElements'
+import { Button } from '../ButtonElements' 
 
 const Hero = () => {
+  const videos = [
+    Video1,
+    Video2,
+    Video3,
+    Video4,
+    Video5
+  ];
+  
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
     setHover(!hover)
   }
+  
+  const getVideo = ()  => {
+    const randomNumber = Math.floor(Math.random() * videos.length);
+    return videos[randomNumber];
+  }
 
   return (
     <HeroContainer id='home'>
       <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
+        <VideoBg autoPlay loop muted src={getVideo()} type='video/mp4' />
       </HeroBg>
-      <HeroContent>
-        <HeroH1> Virtual Banking Make Easy</HeroH1>
-        <HeroP>Sign up for a new accoun today and recive $250 in credit towards your next payment</HeroP>
-        <HeroBtnWrapper>
-          <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'               smooth={true} duration={500} spy={true} exact='true' offset={-80}>
-            Get Started {hover ? <ArrowForward /> : <ArrowRight/>}
-          </Button>
-        </HeroBtnWrapper>
-      </HeroContent>
     </HeroContainer>
   )
 }

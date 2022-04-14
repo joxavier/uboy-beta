@@ -9,6 +9,13 @@ function App() {
       <Switch>
         <Route path='/' component={Home} exact />
         <Route path='/signin' component={SigninPage} exact />
+        <Route
+          path="/mint"
+          component={() => {
+            window.location.href = 'https://uboys.vercel.app/';
+            return null;
+          }}
+        />
       </Switch>
     </Router>
   );
