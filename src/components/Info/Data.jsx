@@ -1,49 +1,52 @@
-export const homeObjOne = {
+export const homeObjAbout = {
   id: 'about',
   lightBg: false,
   lightText: true,
   lighttextDesc: true,
-  topLine: 'Premium Bank',
-  headline: 'Unlimited Transactions with zero fees',
-  description: 'Get access to our exclusive app that allows you to send unlimited transactions whitout getting charged any fees.',
-  buttonLabel: 'Get started',
+  topLine: 'UBOY NFTs',
+  headline: 'De-Fi Lottery System',
+  description: 'At UBOY NFTs we are GIVING BACK to YOU the CONSUMER',
+  buttonLabel: 'Discord Server',
+  buttonLink: 'https://discord.gg/WQAPvDeHg2',
   imgStart: false,
-  img: '/images/svg-1.svg',
-  alt: 'car',
+  img: '/images/uboy-fat-panda.svg',
+  alt: 'Uboy Fat Panda',
   dark: true,
   primary: true,
   darkText: false
 };
 
-export const homeObjTwo = {
-  id: 'discover',
+export const homeObjCollaborators = {
+  id: 'collaborators',
   lightBg: true,
   lightText: false,
   lighttextDesc: false,
-  topLine: 'Unlimited Access',
-  headline: 'Login to your account at any time',
-  description: 'Get access to our exclusive app that allows you to send unlimited transactions whitout getting charged any fees.',
-  buttonLabel: 'Learn More',
+  topLine: 'NFT Creators',
+  headline: 'Experience the Uboy Effect',
+  description: 'We are building a De-Fi launchpad for the latest NFT projects, connecting Minters with our Collaborators.',
+  buttonLabel: 'Become A Collaborator',
+  buttonLink: 'metaverse',
   imgStart: true,
-  img: '/images/svg-4.svg',
-  alt: 'Piggybanck',
+  img: '/images/uboy-female-panda.svg',
+  alt: 'Uboy Female Panda',
   dark: false,
   primary: false,
   darkText: true
 };
 
-export const homeObjThree = {
-  id: 'signup',
-  lightBg: true,
-  lightText: false,
-  lighttextDesc: false,
-  topLine: 'Premium Bank',
-  headline: 'Creating an account is extremely easy',
-  description: 'Get access to our exclusive app that allows you to send unlimited transactions whitout getting charged any fees.',
-  buttonLabel: 'Start Now',
+export const homeObjMinters = {
+  id: 'minters',
+  lightBg: false,
+  lightText: true,
+  lighttextDesc: true,
+  topLine: 'Uboy Minters',
+  headline: 'Buy Early, Win BIG',
+  description: 'As a Uboy NFT holder, you will have opportunities to CONTINUOUSLY WIN!',
+  buttonLabel: 'Buy Now',
+  buttonLink: 'https://uboys.vercel.app/',
   imgStart: false,
-  img: '/images/svg-3.svg',
-  alt: 'car',
-  primary: false,
-  darkText: true
+  img: '/images/uboy-laker-panda.svg',
+  alt: 'Uboy Laker Panda',
+  primary: true,
+  darkText: false
 };
