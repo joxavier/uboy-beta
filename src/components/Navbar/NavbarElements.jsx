@@ -46,10 +46,11 @@ export const NavLogoWrap = styled.div`
   align-items: center;
   margin-left: 24px;
   margin-top: 24px;
-  height: 100%;
+  max-height: 66px;
 `
 export const LogoImg = styled.img`
   width: 100%;
+  height: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
 `
