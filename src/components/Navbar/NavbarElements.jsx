@@ -45,7 +45,7 @@ export const NavLogoWrap = styled.div`
   display: flex;
   align-items: center;
   margin-left: 24px;
-  max-width: 10%;
+  margin-top: 24px;
   height: 100%;
 `
 export const LogoImg = styled.img`
