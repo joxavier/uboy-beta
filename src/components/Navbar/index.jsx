@@ -28,7 +28,7 @@ const Navbar = ({ toggle }) => {
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
             <NavLogoWrap>
-              <LogoImg to='/' onClick={toggleHome} src={"./images/uboy_logo.png"} alt={"UBOY Logo"} />
+              <LogoImg to='/' onClick={toggleHome} src={"./images/uboy_NFTs_logo.svg"} alt={"UBOY Logo"} />
             </NavLogoWrap>
           <MobileIcon onClick={toggle}>
             <FaBars />
